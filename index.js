@@ -19,7 +19,7 @@ app.get('/*', function(req,res) {
 	res.redirect('/')
 });
 //Define el puerto de la plataforma
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 app.listen(app.get('port'), function () {
 	//Comienza a ejecutar la plataforma
 	console.log('App listening on port '+app.get('port'));
